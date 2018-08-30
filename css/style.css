@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900", "media.sass");
+html, body, h1, h2, h3, h4, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
+
+.active-checkbox {
+  background: url("../img/rectangle.png"); }
+
+.disabled-checkbox {
+  background: url("../img/disabled-rectange.png"); }
+
+.visible {
+  display: block !important; }
+
+.red-color {
+  color: #f00 !important; }
+
+body {
+  height: 100vh;
+  background: url("../img/background.png") no-repeat;
+  background-size: 100% 100%;
+  color: #fff; }
+  body .main-wrapper {
+    width: 985px;
+    padding-top: 70px;
+    margin: 0 auto; }
+    body .main-wrapper .select-wrapper {
+      height: 98px;
+      border-radius: 11px;
+      border: 1px solid #2b3b45;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      body .main-wrapper .select-wrapper .title-box h1.select-title {
+        font-size: 32px;
+        line-height: 98px;
+        padding-left: 136px;
+        font-weight: 500; }
+      body .main-wrapper .select-wrapper .currencu-wrapper {
+        background: #1f272f;
+        width: 294px;
+        height: 55px;
+        border-radius: 7px;
+        border: 1px solid #92e8fe;
+        position: relative;
+        margin-right: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body .main-wrapper .select-wrapper .currencu-wrapper li {
+          list-style-type: none;
+          width: 100%;
+          font-size: 16px;
+          padding-left: 16px; }
+        body .main-wrapper .select-wrapper .currencu-wrapper .other-currency {
+          background: #1f272f;
+          position: absolute;
+          top: calc(100% + 10px);
+          left: 0;
+          width: 100%;
+          border-radius: 5px;
+          display: none;
+          border: 1px solid #92e8fe; }
+          body .main-wrapper .select-wrapper .currencu-wrapper .other-currency li {
+            font-size: 16px;
+            padding: 3px 17px;
+            box-sizing: border-box; }
+            body .main-wrapper .select-wrapper .currencu-wrapper .other-currency li:first-child {
+              padding-top: 12px; }
+            body .main-wrapper .select-wrapper .currencu-wrapper .other-currency li:last-child {
+              padding-bottom: 12px; }
+            body .main-wrapper .select-wrapper .currencu-wrapper .other-currency li:hover {
+              color: #c0c0c0; }
+        body .main-wrapper .select-wrapper .currencu-wrapper .currency-arrow {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 9%;
+          height: 100%;
+          transition: transform 0.5s; }
+          body .main-wrapper .select-wrapper .currencu-wrapper .currency-arrow:hover {
+            transform: scale(1.3) translate(3px 0); }
+          body .main-wrapper .select-wrapper .currencu-wrapper .currency-arrow .arrow-icon {
+            background: url("../img/arrow.png");
+            background-size: 100% 100;
+            width: 9px;
+            height: 5px;
+            margin-right: 14px; }
+    body .main-wrapper .payments {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 52px;
+      flex-wrap: wrap; }
+      body .main-wrapper .payments .bitcoin {
+        background: url(../img/bitcoin.png) no-repeat;
+        width: 308px; }
+      body .main-wrapper .payments .litecoin {
+        background: url(../img/litecoin.png) no-repeat;
+        width: 308px; }
+      body .main-wrapper .payments .ethereum {
+        background: url(../img/ethereum.png) no-repeat;
+        width: 318px; }
+      body .main-wrapper .payments .ethereum, body .main-wrapper .payments .bitcoin, body .main-wrapper .payments .litecoin {
+        background-size: 100% 100%;
+        height: 354px;
+        padding: 20px 36px 26px 32px;
+        box-sizing: border-box; }
+        body .main-wrapper .payments .ethereum h1, body .main-wrapper .payments .bitcoin h1, body .main-wrapper .payments .litecoin h1 {
+          font-size: 22px;
+          text-align: center;
+          width: 100%; }
+        body .main-wrapper .payments .ethereum .values, body .main-wrapper .payments .bitcoin .values, body .main-wrapper .payments .litecoin .values {
+          margin-top: 128px; }
+          body .main-wrapper .payments .ethereum .values .price, body .main-wrapper .payments .bitcoin .values .price, body .main-wrapper .payments .litecoin .values .price {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between; }
+            body .main-wrapper .payments .ethereum .values .price h2, body .main-wrapper .payments .bitcoin .values .price h2, body .main-wrapper .payments .litecoin .values .price h2 {
+              font-size: 20px;
+              margin: 15px 0 0 0;
+              padding: 0;
+              color: #fff; }
+            body .main-wrapper .payments .ethereum .values .price .value, body .main-wrapper .payments .bitcoin .values .price .value, body .main-wrapper .payments .litecoin .values .price .value {
+              font-size: 21.31px;
+              text-align: right;
+              color: #fff; }
+          body .main-wrapper .payments .ethereum .values .percent, body .main-wrapper .payments .bitcoin .values .percent, body .main-wrapper .payments .litecoin .values .percent {
+            height: auto;
+            align-items: center; }
+            body .main-wrapper .payments .ethereum .values .percent h2, body .main-wrapper .payments .bitcoin .values .percent h2, body .main-wrapper .payments .litecoin .values .percent h2 {
+              font-size: 14px;
+              color: #fff;
+              margin: 10px 0; }
+            body .main-wrapper .payments .ethereum .values .percent .switch, body .main-wrapper .payments .bitcoin .values .percent .switch, body .main-wrapper .payments .litecoin .values .percent .switch {
+              background-size: 100% 100%;
+              width: 41px;
+              height: 15px;
+              position: relative;
+              align-items: center; }
+              body .main-wrapper .payments .ethereum .values .percent .switch .circle, body .main-wrapper .payments .bitcoin .values .percent .switch .circle, body .main-wrapper .payments .litecoin .values .percent .switch .circle {
+                position: absolute;
+                top: calc(50% - 12px);
+                left: calc(100% - 24px);
+                background: url("../img/elipse.png");
+                background-size: 100% 100%;
+                height: 24px;
+                width: 24px;
+                z-index: 992;
+                transition: left 0.5s; }
+              body .main-wrapper .payments .ethereum .values .percent .switch input[type='checkbox'], body .main-wrapper .payments .bitcoin .values .percent .switch input[type='checkbox'], body .main-wrapper .payments .litecoin .values .percent .switch input[type='checkbox'] {
+                width: 41px;
+                height: 15px;
+                position: relative;
+                z-index: 999;
+                opacity: 0; }
+        body .main-wrapper .payments .ethereum .price, body .main-wrapper .payments .ethereum .percent, body .main-wrapper .payments .ethereum .hour, body .main-wrapper .payments .ethereum .day, body .main-wrapper .payments .ethereum .week, body .main-wrapper .payments .ethereum .month, body .main-wrapper .payments .bitcoin .price, body .main-wrapper .payments .bitcoin .percent, body .main-wrapper .payments .bitcoin .hour, body .main-wrapper .payments .bitcoin .day, body .main-wrapper .payments .bitcoin .week, body .main-wrapper .payments .bitcoin .month, body .main-wrapper .payments .litecoin .price, body .main-wrapper .payments .litecoin .percent, body .main-wrapper .payments .litecoin .hour, body .main-wrapper .payments .litecoin .day, body .main-wrapper .payments .litecoin .week, body .main-wrapper .payments .litecoin .month {
+          font-size: 14px;
+          display: flex;
+          justify-content: space-between;
+          color: #606060;
+          align-items: baseline;
+          line-height: 1.24;
+          padding: 1px 0; }
+          body .main-wrapper .payments .ethereum .price h2, body .main-wrapper .payments .ethereum .percent h2, body .main-wrapper .payments .ethereum .hour h2, body .main-wrapper .payments .ethereum .day h2, body .main-wrapper .payments .ethereum .week h2, body .main-wrapper .payments .ethereum .month h2, body .main-wrapper .payments .bitcoin .price h2, body .main-wrapper .payments .bitcoin .percent h2, body .main-wrapper .payments .bitcoin .hour h2, body .main-wrapper .payments .bitcoin .day h2, body .main-wrapper .payments .bitcoin .week h2, body .main-wrapper .payments .bitcoin .month h2, body .main-wrapper .payments .litecoin .price h2, body .main-wrapper .payments .litecoin .percent h2, body .main-wrapper .payments .litecoin .hour h2, body .main-wrapper .payments .litecoin .day h2, body .main-wrapper .payments .litecoin .week h2, body .main-wrapper .payments .litecoin .month h2 {
+            font-size: 14px;
+            color: #68786c; }
+          body .main-wrapper .payments .ethereum .price .value, body .main-wrapper .payments .ethereum .percent .value, body .main-wrapper .payments .ethereum .hour .value, body .main-wrapper .payments .ethereum .day .value, body .main-wrapper .payments .ethereum .week .value, body .main-wrapper .payments .ethereum .month .value, body .main-wrapper .payments .bitcoin .price .value, body .main-wrapper .payments .bitcoin .percent .value, body .main-wrapper .payments .bitcoin .hour .value, body .main-wrapper .payments .bitcoin .day .value, body .main-wrapper .payments .bitcoin .week .value, body .main-wrapper .payments .bitcoin .month .value, body .main-wrapper .payments .litecoin .price .value, body .main-wrapper .payments .litecoin .percent .value, body .main-wrapper .payments .litecoin .hour .value, body .main-wrapper .payments .litecoin .day .value, body .main-wrapper .payments .litecoin .week .value, body .main-wrapper .payments .litecoin .month .value {
+            font-size: 16px;
+            font-weight: 500;
+            color: #70c446; }
+        body .main-wrapper .payments .ethereum .price, body .main-wrapper .payments .bitcoin .price, body .main-wrapper .payments .litecoin .price {
+          padding: 0; }
+        body .main-wrapper .payments .ethereum .month, body .main-wrapper .payments .bitcoin .month, body .main-wrapper .payments .litecoin .month {
+          padding: 3px 0; }
+
+@media screen and (max-width: 576px) {
+  body {
+    height: 100%;
+    background: #1b232b; }
+    body .main-wrapper {
+      width: auto;
+      padding: 10px; }
+      body .main-wrapper .select-wrapper {
+        width: auto;
+        display: block;
+        height: auto;
+        border: none;
+        border-bottom: 2px solid #2b3b45; }
+        body .main-wrapper .select-wrapper .title-box h1.select-title {
+          font-size: 22px;
+          text-align: center;
+          margin: 0;
+          padding: 0; }
+        body .main-wrapper .select-wrapper .currencu-wrapper {
+          width: 100%;
+          margin: 10px 0; }
+          body .main-wrapper .select-wrapper .currencu-wrapper li {
+            text-align: center; }
+      body .main-wrapper .payments .ethereum, body .main-wrapper .payments .bitcoin, body .main-wrapper .payments .litecoin {
+        width: 100%;
+        margin-bottom: 30px;
+        line-height: 1; }
+      body .main-wrapper .payments .ethereum {
+        background-size: 104% 100%; } }
+@media (min-width: 576px) and (max-width: 767px) {
+  body {
+    background: #1b232b; }
+    body .main-wrapper {
+      width: auto;
+      padding: 20px; }
+      body .main-wrapper .select-wrapper {
+        display: block;
+        height: auto;
+        border: none;
+        border-bottom: 2px solid #2b3b45; }
+        body .main-wrapper .select-wrapper .title-box {
+          text-align: center; }
+          body .main-wrapper .select-wrapper .title-box h1.select-title {
+            font-size: 24px;
+            text-align: center;
+            padding: 0; }
+        body .main-wrapper .select-wrapper .currencu-wrapper {
+          width: 100%;
+          margin: 10px 0; }
+          body .main-wrapper .select-wrapper .currencu-wrapper li {
+            text-align: center; }
+      body .main-wrapper .payments .ethereum, body .main-wrapper .payments .bitcoin, body .main-wrapper .payments .litecoin {
+        width: 50%;
+        margin-bottom: 20px;
+        height: auto; }
+        body .main-wrapper .payments .ethereum h1, body .main-wrapper .payments .bitcoin h1, body .main-wrapper .payments .litecoin h1 {
+          font-size: 20px; }
+        body .main-wrapper .payments .ethereum .values, body .main-wrapper .payments .bitcoin .values, body .main-wrapper .payments .litecoin .values {
+          margin-top: 130px; }
+          body .main-wrapper .payments .ethereum .values .price h2, body .main-wrapper .payments .ethereum .values .percent h2, body .main-wrapper .payments .ethereum .values .hour h2, body .main-wrapper .payments .ethereum .values .day h2, body .main-wrapper .payments .ethereum .values .week h2, body .main-wrapper .payments .ethereum .values .month h2, body .main-wrapper .payments .bitcoin .values .price h2, body .main-wrapper .payments .bitcoin .values .percent h2, body .main-wrapper .payments .bitcoin .values .hour h2, body .main-wrapper .payments .bitcoin .values .day h2, body .main-wrapper .payments .bitcoin .values .week h2, body .main-wrapper .payments .bitcoin .values .month h2, body .main-wrapper .payments .litecoin .values .price h2, body .main-wrapper .payments .litecoin .values .percent h2, body .main-wrapper .payments .litecoin .values .hour h2, body .main-wrapper .payments .litecoin .values .day h2, body .main-wrapper .payments .litecoin .values .week h2, body .main-wrapper .payments .litecoin .values .month h2 {
+            font-size: 12px; }
+          body .main-wrapper .payments .ethereum .values .price .value, body .main-wrapper .payments .ethereum .values .percent .value, body .main-wrapper .payments .ethereum .values .hour .value, body .main-wrapper .payments .ethereum .values .day .value, body .main-wrapper .payments .ethereum .values .week .value, body .main-wrapper .payments .ethereum .values .month .value, body .main-wrapper .payments .bitcoin .values .price .value, body .main-wrapper .payments .bitcoin .values .percent .value, body .main-wrapper .payments .bitcoin .values .hour .value, body .main-wrapper .payments .bitcoin .values .day .value, body .main-wrapper .payments .bitcoin .values .week .value, body .main-wrapper .payments .bitcoin .values .month .value, body .main-wrapper .payments .litecoin .values .price .value, body .main-wrapper .payments .litecoin .values .percent .value, body .main-wrapper .payments .litecoin .values .hour .value, body .main-wrapper .payments .litecoin .values .day .value, body .main-wrapper .payments .litecoin .values .week .value, body .main-wrapper .payments .litecoin .values .month .value {
+            font-size: 12px; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  body .main-wrapper {
+    width: auto;
+    padding: 20px; }
+    body .main-wrapper .select-wrapper {
+      height: auto; }
+      body .main-wrapper .select-wrapper .title-box {
+        text-align: center; }
+        body .main-wrapper .select-wrapper .title-box h1.select-title {
+          font-size: 24px;
+          text-align: center;
+          padding-left: 25px; }
+      body .main-wrapper .select-wrapper .currencu-wrapper li {
+        text-align: center; }
+    body .main-wrapper .payments {
+      justify-content: space-around; }
+      body .main-wrapper .payments .ethereum, body .main-wrapper .payments .bitcoin, body .main-wrapper .payments .litecoin {
+        margin-bottom: 20px;
+        height: auto; }
+        body .main-wrapper .payments .ethereum h1, body .main-wrapper .payments .bitcoin h1, body .main-wrapper .payments .litecoin h1 {
+          font-size: 20px; }
+        body .main-wrapper .payments .ethereum .values, body .main-wrapper .payments .bitcoin .values, body .main-wrapper .payments .litecoin .values {
+          margin-top: 130px; }
+          body .main-wrapper .payments .ethereum .values .price h2, body .main-wrapper .payments .ethereum .values .percent h2, body .main-wrapper .payments .ethereum .values .hour h2, body .main-wrapper .payments .ethereum .values .day h2, body .main-wrapper .payments .ethereum .values .week h2, body .main-wrapper .payments .ethereum .values .month h2, body .main-wrapper .payments .bitcoin .values .price h2, body .main-wrapper .payments .bitcoin .values .percent h2, body .main-wrapper .payments .bitcoin .values .hour h2, body .main-wrapper .payments .bitcoin .values .day h2, body .main-wrapper .payments .bitcoin .values .week h2, body .main-wrapper .payments .bitcoin .values .month h2, body .main-wrapper .payments .litecoin .values .price h2, body .main-wrapper .payments .litecoin .values .percent h2, body .main-wrapper .payments .litecoin .values .hour h2, body .main-wrapper .payments .litecoin .values .day h2, body .main-wrapper .payments .litecoin .values .week h2, body .main-wrapper .payments .litecoin .values .month h2 {
+            font-size: 12px; }
+          body .main-wrapper .payments .ethereum .values .price .value, body .main-wrapper .payments .ethereum .values .percent .value, body .main-wrapper .payments .ethereum .values .hour .value, body .main-wrapper .payments .ethereum .values .day .value, body .main-wrapper .payments .ethereum .values .week .value, body .main-wrapper .payments .ethereum .values .month .value, body .main-wrapper .payments .bitcoin .values .price .value, body .main-wrapper .payments .bitcoin .values .percent .value, body .main-wrapper .payments .bitcoin .values .hour .value, body .main-wrapper .payments .bitcoin .values .day .value, body .main-wrapper .payments .bitcoin .values .week .value, body .main-wrapper .payments .bitcoin .values .month .value, body .main-wrapper .payments .litecoin .values .price .value, body .main-wrapper .payments .litecoin .values .percent .value, body .main-wrapper .payments .litecoin .values .hour .value, body .main-wrapper .payments .litecoin .values .day .value, body .main-wrapper .payments .litecoin .values .week .value, body .main-wrapper .payments .litecoin .values .month .value {
+            font-size: 12px; } }
+
+/*# sourceMappingURL=style.css.map */
